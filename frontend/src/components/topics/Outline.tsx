@@ -1,0 +1,134 @@
+import * as React from "react";
+import styled from 'styled-components';
+
+
+const TagComponent = styled.div`
+  width:100%;
+  padding: 80px 16px;
+  margin: 0px auto;
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  margin-top:-18px;
+`;
+
+const Header = styled.h1`
+  margin:0;
+  padding: 16px 16px;
+  color: white;
+  font-size: 20px;
+  min-height: 10vh;
+  
+
+
+`;
+
+const Tiles1 = styled.div`
+  display: block;
+  margin:0;
+  padding: 100px 100px;
+  color: white;
+  font-size: 20px;
+  min-height: 10vh;
+  border-radius: 10px;
+  position: fixed;
+  background-color: black;
+  box-shadow: 0px 0px 50px #FF6600;
+
+  &:hover {
+      background-color: #0b1b22;
+      border-radius: 10px;
+      box-shadow: 0px 50px 50px red;
+      cursor: pointer;
+      
+  }
+  
+`;
+const Tiles2 = styled.div`
+  
+  margin-left: 400px;
+  padding: 100px 100px;
+  color: white;
+  font-size: 20px;
+  min-height: 10vh;
+  border-radius: 10px;
+  position: fixed;
+  background-color: black;
+  box-shadow: 0px 0px 50px #FF6600;
+
+  &:hover {
+      background-color: #0b1b22;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0px 50px 50px red;
+  }
+  
+`;
+
+const Tiles3 = styled.div`
+  
+  margin-left: 800px;
+  padding: 100px 100px;
+  color: white;
+  font-size: 20px;
+  min-height: 10vh;
+  border-radius: 10px;
+  position: fixed;
+  background-color: black;
+  box-shadow: 0px 0px 50px #FF6600;
+  
+  &:hover {
+      background-color: #0b1b22;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0px 50px 50px red;
+  }
+`;
+
+const Tiles4 = styled.div`
+  
+  margin-left: 1200px;
+  padding: 100px 100px;
+  color: white;
+  font-size: 20px;
+  min-height: 10vh;
+  border-radius: 10px;
+  position: fixed;
+  background-color: black;
+  box-shadow: 0px 0px 50px #FF6600;
+
+  &:hover {
+      background-color: #0b1b22;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0px 50px 50px red;
+  }
+  
+`;
+
+
+class Outline extends React.Component {
+    render() {
+        return (
+            <TagComponent>
+                <Header><h1>Topics</h1></Header>
+                <Tiles1>
+                  <h3>MAPING 1</h3>
+                </Tiles1>
+                <Tiles2>
+                  <h3>MAPING 2</h3>
+                </Tiles2>
+                <Tiles3>
+                  <h3>MAPPING 3</h3>
+                </Tiles3>
+                <Tiles4>
+                  <h3>MAPPING 4</h3>
+                </Tiles4>
+            </TagComponent>
+
+        )
+    }
+}
+
+export default Outline;
+

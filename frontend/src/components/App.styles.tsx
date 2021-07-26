@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
         color: white;
         font-family: Open-Sans, Helvetica, sans-serif;
         font-family: Proxima Nova, --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        
+        min-height: 100%;
     }
 `;
 

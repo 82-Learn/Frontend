@@ -1,6 +1,7 @@
 import * as React from "react";
 import styled from 'styled-components';
-
+import { useHistory } from "react-router-dom";
+import Topic1 from "./Topic1";
 
 const TagComponent = styled.div`
   width:100%;
@@ -31,7 +32,7 @@ const Tiles1 = styled.div`
   font-size: 20px;
   min-height: 10vh;
   border-radius: 10px;
-  position: fixed;
+  position: absolute;
   background-color: black;
   box-shadow: 0px 0px 50px #FF6600;
 
@@ -40,6 +41,7 @@ const Tiles1 = styled.div`
       border-radius: 10px;
       box-shadow: 0px 50px 50px red;
       cursor: pointer;
+      
       
   }
   
@@ -52,7 +54,7 @@ const Tiles2 = styled.div`
   font-size: 20px;
   min-height: 10vh;
   border-radius: 10px;
-  position: fixed;
+  position: absolute;
   background-color: black;
   box-shadow: 0px 0px 50px #FF6600;
 
@@ -73,7 +75,7 @@ const Tiles3 = styled.div`
   font-size: 20px;
   min-height: 10vh;
   border-radius: 10px;
-  position: fixed;
+  position: absolute;
   background-color: black;
   box-shadow: 0px 0px 50px #FF6600;
   
@@ -93,7 +95,7 @@ const Tiles4 = styled.div`
   font-size: 20px;
   min-height: 10vh;
   border-radius: 10px;
-  position: fixed;
+  position: absolute;
   background-color: black;
   box-shadow: 0px 0px 50px #FF6600;
 
@@ -107,22 +109,24 @@ const Tiles4 = styled.div`
 `;
 
 
+
+
 class Outline extends React.Component {
     render() {
         return (
             <TagComponent>
                 <Header><h1>Topics</h1></Header>
-                <Tiles1>
-                  <h3>MAPING 1</h3>
+                <Tiles1 onClick={event => window.location.href = '/topic1'}>
+                  <h3>TOPIC 1</h3>
                 </Tiles1>
                 <Tiles2>
-                  <h3>MAPING 2</h3>
+                  <h3>TOPIC 2</h3>
                 </Tiles2>
                 <Tiles3>
-                  <h3>MAPPING 3</h3>
+                  <h3>TOPIC 3</h3>
                 </Tiles3>
                 <Tiles4>
-                  <h3>MAPPING 4</h3>
+                  <h3>TOPIC 4</h3>
                 </Tiles4>
             </TagComponent>
 

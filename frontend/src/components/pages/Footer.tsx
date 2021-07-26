@@ -3,33 +3,52 @@ import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
     position: relative;
-    font-size: 20px;
     font-weight: bold;
     text-align: center;
-    margin: 0 auto;
+   
     display: block;
-    top: 60vh;
+    width:100%;
     background-color: #111110;
+   
+    padding-top:50px;
+    height: 200px;
+    margin-top: 500px;
+
+    box-sizing: border-box;
     
+   
 `;
 
-const StyledFooter2 = styled.footer`
-    font-size:10px;
+const Row = styled.div`
+  &::after {
+      content: "";
+      clear: both;
+      display: table;
+  }
 `;
+
+const Column = styled.div`
+float: left;
+width: 33.33%;
+font-weight: normal;
+font-size: 12px;
+
+
+`;
+
 
 const Footer = () =>
     <StyledFooter>
+        <Row>
+        <Column>Testing 1</Column>
+        <Column>Testing 2</Column>
+        <Column>Testing 3</Column>
+        </Row>
         <p>&copy; 2021 82 Learn Pty Ltd</p>
-    <StyledFooter2>
-        <p>Extra information needed to know</p>
-        <p>Extra information needed to know</p>
-        <p>Extra information needed to know</p>
-        <p>Extra information needed to know</p>
-        <p>Extra information needed to know</p>
-        <p>Extra information needed to know</p>
-        <p>Extra information needed to know</p>
-        <p>Extra information needed to know</p>
-    </StyledFooter2>
+   
+ 
+
+
     </StyledFooter>
     
 

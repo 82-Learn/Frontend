@@ -32,13 +32,13 @@ const Body = styled.div`
   min-height: 70vh;
   border-radius: 30px;
   position: relative;
-  box-shadow: 0px     0px 30px orange;
-  
+  box-shadow: 0px     0px 30px #c94001;
+  background-color: #0b1b22;
 `;
 
 
 
-class Outline extends React.Component {
+class Topic1 extends React.Component {
     render() {
         return (
             <TagComponent>
@@ -63,4 +63,4 @@ class Outline extends React.Component {
     }
 }
 
-export default Outline;
+export default Topic1;

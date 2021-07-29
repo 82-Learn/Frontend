@@ -23,18 +23,6 @@ const Header = styled.h1`
 
 `;
 
-const Body = styled.div`
-  
-  margin:0;
-  padding: 1px 1px;
-  color: white;
-  font-size: 20px;
-  min-height: 70vh;
-  border-radius: 30px;
-  position: relative;
-  box-shadow: 0px     0px 30px orange;
-  
-`;
 
 
 

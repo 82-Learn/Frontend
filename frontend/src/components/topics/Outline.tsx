@@ -11,6 +11,7 @@ const TagComponent = styled.div`
   color: white;
   text-align: center;
   margin-top:-18px;
+  
 `;
 
 const Header = styled.h1`
@@ -87,28 +88,17 @@ const Tiles3 = styled.div`
   }
 `;
 
-const Tiles4 = styled.div`
+const Body = styled.div`
   
-  margin-left: 1200px;
-  padding: 100px 100px;
+  margin:0;
+  padding: 1px 1px;
   color: white;
   font-size: 20px;
-  min-height: 10vh;
-  border-radius: 10px;
-  position: absolute;
-  background-color: black;
-  box-shadow: 0px 0px 50px #FF6600;
-
-  &:hover {
-      background-color: #0b1b22;
-      border-radius: 10px;
-      cursor: pointer;
-      box-shadow: 0px 50px 50px red;
-  }
-  
+  min-height: 70vh;
+  border-radius: 30px;
+  position: relative;
+ 
 `;
-
-
 
 
 class Outline extends React.Component {
@@ -116,6 +106,7 @@ class Outline extends React.Component {
         return (
             <TagComponent>
                 <Header><h1>Topics</h1></Header>
+                <Body>
                 <Tiles1 onClick={event => window.location.href = '/topic1'}>
                   <h3>TOPIC 1</h3>
                 </Tiles1>
@@ -125,9 +116,7 @@ class Outline extends React.Component {
                 <Tiles3>
                   <h3>TOPIC 3</h3>
                 </Tiles3>
-                <Tiles4>
-                  <h3>TOPIC 4</h3>
-                </Tiles4>
+                </Body>
             </TagComponent>
 
         )

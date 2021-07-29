@@ -36,6 +36,14 @@ const Body = styled.div`
   background-color: #0b1b22;
 `;
 
+const Button = styled.button`
+font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border-radius: 3px;
+  background-color: #333;
+  color: white;
+`;
 
 
 class Topic1 extends React.Component {
@@ -47,15 +55,15 @@ class Topic1 extends React.Component {
                   <p>
                     Rules 
                   </p>
-                  <button>See Rules</button>
+                  <Button>See Rules</Button>
                   <p>
                     Application
                   </p>
-                  <button>See Example</button>
+                  <Button>See Rules</Button>
                   <p>
                     Results
                   </p>
-                  <button>See Results</button>
+                  <Button>See Rules</Button>
                 </Body>
             </TagComponent>
 

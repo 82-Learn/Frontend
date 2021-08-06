@@ -33,7 +33,7 @@ const Body = styled.div`
   border-radius: 30px;
   position: relative;
   box-shadow: 0px     0px 30px #c94001;
-  background-color: #0b1b22;
+  background-color: black;
 `;
 
 const Button = styled.button`
@@ -41,7 +41,7 @@ font-size: 1em;
   margin: 1em;
   padding: 0.25em 1em;
   border-radius: 3px;
-  background-color: #333;
+  background-color: #d53838;
   color: white;
 `;
 
@@ -50,7 +50,7 @@ class Topic1 extends React.Component {
     render() {
         return (
             <TagComponent>
-                <Header><h1>Learning Process</h1></Header>
+                <Header><h1>Topic 1</h1></Header>
                 <Body>
                   <p>
                     Rules 

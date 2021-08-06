@@ -1,6 +1,6 @@
 import * as React from "react";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Footer from './pages/Footer';
+import Footer from './pages/footer/Footer';
 
 import Layout from './pages/Layout';
 import {GlobalStyle} from './styles/global.styles';

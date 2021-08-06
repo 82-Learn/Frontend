@@ -1,13 +1,17 @@
 import * as React from "react";
 import styled from 'styled-components';
+import LogoSrc from './images/logo1.png';
 
 const StyledFooter = styled.div`
   padding: 0;
   background-color: rgb(19, 19, 18);
   position: relative;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
   font-family: sans-serif;
+  height:400px;
+  clear: both;
+  z-index:10;
   
 `;
 
@@ -57,6 +61,22 @@ const FooterLink = styled.a`
   }
 `;
 
+const BottomFooter = styled.p`
+
+    min-height: 1vh;
+    margin-top: 9em;
+`;
+
+const Logo = styled.img`
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    top: 60px;
+    left: 2px;
+    background-color: #FF6600;
+    border-radius: 30px;
+    
+`;
 
 const Footer = () =>
     <StyledFooter>
@@ -64,20 +84,23 @@ const Footer = () =>
         <Row>
           <Column>
           <Heading>About 82</Heading>
-          <FooterLink href="#">Aim for 82 Learn</FooterLink>
+          <FooterLink onClick={event => window.location.href = '/aim'}>Aim for 82 Learn</FooterLink>
           </Column>
           <Column>
             <Heading>Contact 82</Heading>
-            <FooterLink href="#">82 Learn @</FooterLink>
+            <FooterLink onClick={event => window.location.href = '/contact'}>82 Learn @</FooterLink>
           </Column>
           <Column>
             <Heading>Sign Up</Heading>
-            <FooterLink href="#">Sign up</FooterLink>
-            <FooterLink href="#">Login</FooterLink>
+            <FooterLink onClick={event => window.location.href = '/signup'}>Sign up</FooterLink>
+            <FooterLink onClick={event => window.location.href = '/login'}>Login</FooterLink>
           </Column>
         </Row>
+        <BottomFooter>
+        <p>Copyright &copy; 2021 82 Learn Pty Ltd</p>
+        </BottomFooter>
+        <Logo src={LogoSrc} alt="logo"/>
       </Container>
-        <p>&copy; 2021 82 Learn Pty Ltd</p>
     </StyledFooter>
     
 

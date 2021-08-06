@@ -46,11 +46,11 @@ font-size: 1em;
 `;
 
 
-class Topic2 extends React.Component {
+class Topic3 extends React.Component {
     render() {
         return (
             <TagComponent>
-                <Header><h1>Topic 2</h1></Header>
+                <Header><h1>Topic 3</h1></Header>
                 <Body>
                   <p>
                     Rules 
@@ -71,4 +71,4 @@ class Topic2 extends React.Component {
     }
 }
 
-export default Topic2;
+export default Topic3;

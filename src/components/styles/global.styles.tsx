@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         background: #333;
         color: white;
-        height: auto;
+        height: auto; 
     }
 
     *:focus {

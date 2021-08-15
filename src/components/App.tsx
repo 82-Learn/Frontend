@@ -16,8 +16,8 @@ function App() {
               <GlobalStyle />
                 <Routes />
               </Router>
+              {location.pathname !== '/cars' && <Footer/>}
           </Layout>
-          <Footer />  
       </div>
     );
 }

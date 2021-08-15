@@ -52,11 +52,12 @@ const FooterLink = styled.a`
   margin-bottom: 20px;
   font-size:18px;
   text-decoration: none;
+  cursor: pointer;
    
   &:hover {
     
       background-color: #FF6600;
-      border-radius: 10px;
+      border-radius: 5px;
       box-shadow: 0px 50px 50px red;
   }
 `;
@@ -68,12 +69,11 @@ const BottomFooter = styled.p`
 `;
 
 const Logo = styled.img`
+  
     position: absolute;
-    width: 250px;
-    height: 200px;
-    top: 60px;
+    width: 60px;
+    height: 60px;
     left: 2px;
-    background-color: #FF6600;
     border-radius: 30px;
     
 `;
@@ -99,7 +99,6 @@ const Footer = () =>
         <BottomFooter>
         <p>Copyright &copy; 2021 82 Learn Pty Ltd</p>
         </BottomFooter>
-        <Logo src={LogoSrc} alt="logo"/>
       </Container>
     </StyledFooter>
     

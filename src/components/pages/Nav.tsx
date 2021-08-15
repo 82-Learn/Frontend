@@ -1,6 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 
+
 const Navbar = styled.div`
   background-color: #888;
 `;
@@ -19,7 +20,6 @@ const NavLinks = styled.ul`
 
   & a {
       font-size: 1.4rem;
-      line-height: 2;
       color: white;
       text-align: center;
       text-transform: uppercase;
@@ -27,10 +27,12 @@ const NavLinks = styled.ul`
       padding: 14px 16px;
       float: left;
       cursor: pointer;
-
+      background-color: #010d11;
+      border-radius: 35px;
+      line-height: 2em;
 
   &:hover {
-      background-color: #010d11;
+      background-color: red;
       border-radius: 30px;
       
   }

@@ -10,6 +10,7 @@ const TagComponent = styled.div`
   color: white;
   text-align: center;
   margin-top:-18px;
+  margin-bottom: 500px;
 
 `;
 
@@ -32,8 +33,9 @@ const Body = styled.div`
   min-height: 70vh;
   border-radius: 30px;
   position: relative;
-  box-shadow: 0px     0px 30px #c94001;
-  background-color: black;
+  box-shadow: 0px     0px 30px #e70404;
+  background-color: #0b1b22;
+
 `;
 
 const Button = styled.button`

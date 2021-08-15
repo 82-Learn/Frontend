@@ -15,25 +15,26 @@ const TagComponent = styled.div`
 
 const Header = styled.h1`
   margin:0;
-  padding: 16px 16px;
+  margin-top: -30px;
+  padding: 0px 0px;
   color: white;
   font-size: 20px;
-  min-height: 10vh;
-
 
 `;
 
 const Body = styled.div`
   
-  margin:0;
-  padding: 1px 1px;
+  margin:auto;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 10px 10px;
   color: white;
   font-size: 20px;
+  display: block;
   min-height: 70vh;
   border-radius: 30px;
-  position: relative;
-  box-shadow: 0px     0px 30px #c94001;
-  background-color: black;
+  box-shadow: 0px     0px 30px red;
+  background-color: #0b1b22;
 `;
 
 const Button = styled.button`

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
+import img from './img/backwall.jpg'
 
 export const GlobalStyle = createGlobalStyle`
     body {
@@ -10,6 +11,8 @@ export const GlobalStyle = createGlobalStyle`
         background: #333;
         color: white;
         height: auto; 
+        background-image: url(${img});
+        
     }
 
     *:focus {

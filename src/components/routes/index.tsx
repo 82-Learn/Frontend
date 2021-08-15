@@ -10,7 +10,8 @@ import Aim from "../pages/footer/Aim";
 import Contact from "../pages/footer/Contact";
 import Login from '../pages/login/Login';
 import Register from '../pages/login/SignUp';
-
+import Cars from '../dashboard/Cars';
+import Footer from '../pages/footer/Footer';
 class Routes extends React.Component {
     render() {
         return (
@@ -24,6 +25,7 @@ class Routes extends React.Component {
              <Route path="/contact" component={Contact}/>
              <Route path="/login" component={Login}/>
              <Route path="/signup" component={Register}/>
+             <Route path="/cars" component={Cars}/>
              <Route component={NotFound}/>
          </Switch>
         )

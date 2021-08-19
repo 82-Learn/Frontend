@@ -16,7 +16,9 @@ function App() {
               <GlobalStyle />
                 <Routes />
               </Router>
-              {location.pathname !== '/cars' && <Footer/>}
+              {location.pathname !== '/cars' && 
+              location.pathname !== '/login' &&
+              location.pathname !== '/signup' && <Footer/>},
           </Layout>
       </div>
     );

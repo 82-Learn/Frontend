@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
-import img from './img/backwall.jpg'
+import img from "./img/background2.png";
 
 export const GlobalStyle = createGlobalStyle`
     body {
@@ -8,9 +8,10 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         border: 0;
         box-sizing: border-box;
-        background: #333;
         color: white;
         height: auto; 
+        margin-top: 20px;
+        background-size: 100%;
         background-image: url(${img});
         
     }

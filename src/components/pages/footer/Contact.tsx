@@ -9,7 +9,7 @@ const TagComponent = styled.div`
   box-sizing: border-box;
   color: white;
   text-align: center;
-  margin-top:-18px;
+  margin-bottom: 160px;
 
 `;
 
@@ -35,6 +35,26 @@ const StyledText = styled.div`
  
 `;
 
+const StyledBox = styled.div`
+
+  padding: 50px 10px;
+  color: white;
+  font-size: 20px;
+  margin-left:800px;
+  margin-right: 800px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: black;
+
+
+  &:hover {
+      background-color: #0b1b22;
+      border-radius: 10px;
+      box-shadow: 0px 50px 50px none;
+  }
+  
+`;
+
 
 
 class Contact extends React.Component {
@@ -43,11 +63,11 @@ class Contact extends React.Component {
             <TagComponent>
                 <Header><h1>Contacts</h1></Header>
                   <StyledText>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </StyledText>
+                  <p>Do you have any questions?</p>
+                  </StyledText>
+                  <StyledBox>
+                    <p>info@82learn.com</p>
+                  </StyledBox>
             </TagComponent>
 
         )

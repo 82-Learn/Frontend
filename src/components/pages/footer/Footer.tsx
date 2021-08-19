@@ -1,12 +1,12 @@
 import * as React from "react";
 import styled from 'styled-components';
-import LogoSrc from './images/logo1.png';
+
 
 const StyledFooter = styled.div`
   padding: 0;
   background-color: rgb(19, 19, 18);
   position: relative;
-  bottom: 0px;
+  bottom: -20px;
   width: 100%;
   font-family: sans-serif;
   height:400px;
@@ -37,6 +37,7 @@ const Heading = styled.p`
   color: #fff;
   margin-bottom: 40px;
   font-weight: bold;
+  text-align: center;
 `;
 
 const Container = styled.div`
@@ -52,12 +53,15 @@ const FooterLink = styled.a`
   margin-bottom: 20px;
   font-size:18px;
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
+  padding: 8px 8px;
+  
    
   &:hover {
     
       background-color: #FF6600;
-      border-radius: 5px;
+      border-radius: 30px;
       box-shadow: 0px 50px 50px red;
   }
 `;
@@ -68,15 +72,6 @@ const BottomFooter = styled.p`
     margin-top: 9em;
 `;
 
-const Logo = styled.img`
-  
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    left: 2px;
-    border-radius: 30px;
-    
-`;
 
 const Footer = () =>
     <StyledFooter>
@@ -84,11 +79,11 @@ const Footer = () =>
         <Row>
           <Column>
           <Heading>About 82</Heading>
-          <FooterLink onClick={event => window.location.href = '/aim'}>Aim for 82 Learn</FooterLink>
+          <FooterLink onClick={event => window.location.href = '/aim'}>Aim  82 Learn</FooterLink>
           </Column>
           <Column>
             <Heading>Contact 82</Heading>
-            <FooterLink onClick={event => window.location.href = '/contact'}>82 Learn @</FooterLink>
+            <FooterLink onClick={event => window.location.href = '/contact'}>Contact 82 Learn</FooterLink>
           </Column>
           <Column>
             <Heading>Sign Up</Heading>

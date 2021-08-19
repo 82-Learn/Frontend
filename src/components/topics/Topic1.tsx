@@ -19,7 +19,7 @@ const Header = styled.h1`
   padding: 16px 16px;
   color: white;
   font-size: 20px;
-  min-height: 10vh;
+  min-height: 9vh;
 
 
 `;
@@ -27,14 +27,16 @@ const Header = styled.h1`
 const Body = styled.div`
   
   margin:0;
-  padding: 1px 1px;
+  padding: 150px 150px;
   color: white;
+  margin-left: 100px;
+  margin-right: 100px;
   font-size: 20px;
-  min-height: 70vh;
   border-radius: 30px;
   position: relative;
   box-shadow: 0px     0px 30px #e70404;
-  background-color: #0b1b22;
+  background-color: black;
+  
 
 `;
 
@@ -54,6 +56,7 @@ class Topic1 extends React.Component {
             <TagComponent>
                 <Header><h1>Topic 1</h1></Header>
                 <Body>
+                  <h1>New information upload</h1>
                   <p>
                     Rules 
                   </p>
@@ -61,11 +64,11 @@ class Topic1 extends React.Component {
                   <p>
                     Application
                   </p>
-                  <Button>See Rules</Button>
+                  <Button>apply rules</Button>
                   <p>
                     Results
                   </p>
-                  <Button>See Rules</Button>
+                  <Button>Score</Button>
                 </Body>
             </TagComponent>
 

@@ -97,25 +97,6 @@ const Tiles3 = styled.div`
   }
 `;
 
-const Tiles4 = styled.div`
-  
-
-  padding: 100px 100px;
-  color: white;
-  font-size: 20px;
-  min-height: 10vh;
-  border-radius: 10px;
-
-  background-color: black;
-  box-shadow: 0px 0px 50px #FF6600;
-  
-  &:hover {
-      background-color: #0b1b22;
-      border-radius: 10px;
-      cursor: pointer;
-      box-shadow: 0px 50px 50px red;
-  }
-`;
 
 const Body = styled.div`
   
@@ -163,12 +144,6 @@ class Outline extends React.Component {
                 <Tiles3 onClick={event => window.location.href = '/topic3'}>
                   <h3>TOPIC 3</h3>
                 </Tiles3>
-                <StyledText>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </StyledText>
-                <Tiles4 onClick={event => window.location.href = '/topic3'}>
-                  <h3>TOPIC 4</h3>
-                </Tiles4>
                 <StyledText>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </StyledText>

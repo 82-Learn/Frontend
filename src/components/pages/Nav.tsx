@@ -32,7 +32,7 @@ const NavLinks = styled.ul`
       line-height: 2em;
 
   &:hover {
-      background-color: red;
+      background-color: #FF6600;
       border-radius: 30px;
       
   }

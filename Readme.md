@@ -2,6 +2,7 @@
 
 ---
 
-New Learning method created for users to increase their rate of learning. 
+Frontend Design using React 
+
 
 ![Screenshot](images/screenshot.png)
